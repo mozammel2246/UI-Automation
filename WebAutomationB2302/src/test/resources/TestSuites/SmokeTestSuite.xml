@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeTestSuite" verbose="1">
+
+	<listeners>
+		<listener class-name="base.AnnotationTransformer"></listener>
+	</listeners>
+	
+	<test name="PositiveLogInTest">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+<!--			<class name="com.izaanschool.loginpagetest.NegativeLogInTests" />-->
+<!--			<class name="com.izaanschool.checkboxestest.CheckboxesTest"></class>-->
+			<class name="pagetests.LoginPageTests.LoginPagePositiveTest"></class>
+<!--			<class name="pagetests.hoverspagetests.HoversPageTest"></class>-->
+		</classes>
+	</test>
+
+<!--	<test name="KeyPressesTest">-->
+<!--		<parameter name="browser" value="chrome"></parameter>-->
+<!--		<classes>-->
+<!--			<class name="com.herokuapp.theinternet.keypressestests.KeyPressesTests" />-->
+<!--		</classes>-->
+
+<!--	</test>-->
+	
+<!--	<test name="AlertsTests">-->
+<!--		<classes>-->
+<!--			<class name="com.herokuapp.theinternet.alertstests.AlertsTests" />-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!--	<test name="UploadTests">-->
+<!--		<classes>-->
+<!--			<class name="com.herokuapp.theinternet.uploadtests.UploadTests" />-->
+<!--		</classes>-->
+<!--	</test>-->
+	
+</suite>
